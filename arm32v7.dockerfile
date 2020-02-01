@@ -8,7 +8,7 @@ RUN apk add curl && curl -L ${QEMU_URL} | tar zxvf - -C . --strip-components 1
 
 # Smallest base image
 FROM arm32v7/alpine:latest
-COPY --from=builder qemu-aarch64-static /usr/bin
+COPY --from=builder qemu-arm-static /usr/bin
 
 LABEL maintainer="Kyle Manna <kyle@kylemanna.com>"
 
