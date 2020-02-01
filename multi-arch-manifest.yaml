@@ -1,0 +1,11 @@
+image: kraeutergarten/openvpn:latest
+manifests:
+  - image: kraeutergarten/openvpn:latest:amd64
+    platform:
+      architecture: amd64
+      os: linux
+  - image: kraeutergarten/openvpn:latest:arm64v8
+    platform:
+      architecture: arm64
+      os: linux
+      variant: v8
