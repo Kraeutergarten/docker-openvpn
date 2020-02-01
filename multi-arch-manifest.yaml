@@ -4,7 +4,7 @@ manifests:
     platform:
       architecture: amd64
       os: linux
-  - image: kraeutergarten/openvpn:latest:amd64
+  - image: kraeutergarten/openvpn:latest:armv7
     platform:
       architecture: arm
       os: linux
